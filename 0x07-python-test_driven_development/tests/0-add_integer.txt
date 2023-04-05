@@ -1,0 +1,66 @@
+def add_integer(a, b=98):
+    """
+    Adds two integers.
+    :param a: The  first integer.
+    :type a: int or float
+    :param b: The second integer>
+    :type b: int or float (defaults to 98).
+    :returns:  the sum of the two integers as an integer.
+    :raises TypeError: If 'a' or 'b' is not an integer or float.
+
+    >>> add_integer(2,3)
+    5
+    >>> add_integer(-5,10)
+    5
+    >>> add_integer(2)
+    100
+    >>> add_integer(0)
+    98
+    >>> add_integer(3.5,2.5)
+    6
+    >>> add_integer(3.3,2.7)
+    6
+    >>> add_integer(1000000, 2000000)
+    3000000
+    >>> add_integer(2147483647, 1)
+    2147483648
+    >>> add_integer(-2147483648, -1)
+    -2147483649
+    >>> add_integer(2, "3")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer or a float
+    >>> add_integer("2", 3)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer or a float
+    >>> add_integer("2", "3")
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer or a float
+    >>> add_integer([], 3)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer or a float
+    >>> add_integer({}, [])
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer or a float
+    >>> add_integer(None, None)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer or a float
+    >>> add_integer(2.0, 3)
+    5
+    >>> add_integer(2.5, 3.5)
+    6
+    >>> add_integer(2, 3.0)
+    5
+    """
+
+    if not isinstance(a, (int, float)):
+        raise TypeError("a must be an integer or a float")
+    if not isinstance(b, (int, float)):
+        raise TypeError("b must be an integer or a float")
+
+    return int(a) + int(b)
