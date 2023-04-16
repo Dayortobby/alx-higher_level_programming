@@ -5,7 +5,7 @@ contains the  Mylist class
 
 
 class MyList(list):
-    """ a subclass of list"""
+    """a subclass of list"""
     def __init__(self):
         """initiates the object"""
         super().__init__()
