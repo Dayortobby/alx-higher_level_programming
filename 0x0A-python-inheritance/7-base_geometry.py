@@ -4,7 +4,7 @@ contains a class BaseGeometry
 """
 
 
-class BaseGeometry(object):
+class BaseGeometry:
     """intiating the class methods"""
     def __init__(self):
         pass
