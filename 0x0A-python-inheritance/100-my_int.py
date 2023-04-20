@@ -5,11 +5,15 @@ Contains the class MyInt
 
 
 class MyInt(int):
-    """A rebel int that inverts the == and != operators."""
+    """rebel version of an integer, perfect for opposite day!"""
+    def __new__(cls, *args, **kwargs):
+        """create a new instance of the class"""
+        return super(MyInt, cls).__new__(cls, *args, **kwargs)
+
     def __eq__(self, other):
-        """Return the opposite of == operator."""
-        return super().__ne__(other)
-    
+        """what was != is now =="""
+        return int(self) != other
+
     def __ne__(self, other):
-        """Return the opposite of != operator."""
-        return super().__eq__(other)
+        """what was == is now !="""
+        return int(self) == other
