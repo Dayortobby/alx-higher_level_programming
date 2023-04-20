@@ -2,6 +2,8 @@
 """
 Defines a MyInt class that inherits from int and inverts the == and != operators.
 """
+
+
 class MyInt(int):
     """
     A rebel int that inverts the == and != operators.
