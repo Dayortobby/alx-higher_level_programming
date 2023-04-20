@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Defines a MyInt class that inherits from int and inverts the == and != operators.
+Contains the class MyInt
 """
 
 
