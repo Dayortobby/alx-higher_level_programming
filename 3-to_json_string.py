@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-contains to_json_string function
+contain the JSON string
 """
 
 import json
