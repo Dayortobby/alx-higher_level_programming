@@ -5,7 +5,5 @@ Contains class_to_json function
 
 
 def class_to_json(obj):
-    """returns dictionary description with simple data structure 
-    (list, dictionary, string, integer and boolean)
-    for json serialisation of an object"""
+    """returns dict descript for json object"""
     return obj.__dict__
