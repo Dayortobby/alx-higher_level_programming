@@ -6,8 +6,8 @@ Contains class Student
 
 class Student(object):
     def __init__(self, first_name, last_name, age):
-        self.firstname = firstname
-        self.last_name = lastname
+        self.first_name = first_name
+        self.last_name = last_name
         self.age = age
 
     def class_to_json(obj):
