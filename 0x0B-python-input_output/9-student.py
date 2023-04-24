@@ -6,7 +6,7 @@ Contains class Student
 
 class Student(object):
     def __init__(self, first_name, last_name, age):
-        self.firstname = first name
+        self.firstname = firstname
         self.last_name = lastname
         self.age = age
 
