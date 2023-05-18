@@ -1,5 +1,5 @@
 #!/bin/bash
-
+-- lists all databases of your MySQL server.
 # Prompt for MySQL root password
 read -s -p "Enter MySQL root password: " mysql_password
 echo
