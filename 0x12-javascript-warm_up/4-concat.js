@@ -6,5 +6,5 @@ if (process.argv[2] !== undefined && process.argv[3] !== undefined) {
 } else if (process.argv[2] !== undefined) {
   console.log(`${process.argv[2]} is undefined`);
 } else {
-  console.log("undefined is undefined");
+  console.log('undefined is undefined');
 }
